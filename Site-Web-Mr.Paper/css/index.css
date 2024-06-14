@@ -1,0 +1,83 @@
+         
+/* produtos------------ */
+.container {
+    padding: 20px;
+   margin-left: 20px;
+
+}
+.itens{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/**
+ * Este código CSS seleciona todos os filhos diretos dos elementos com a classe "itens"
+ * e define a propriedade flex-basis deles como 18%.
+ */
+.itens > * {
+    flex-basis: 18%;
+}
+.produto {
+    
+    border: 1px solid #ccc; /* Borda cinza claro */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; 
+    width: 300px; 
+    text-align: center; 
+    background-color: #f9f9f9; 
+}
+
+.produto img {
+    max-width: 100%; /* Imagem se ajusta ao container */
+    height: auto; 
+    margin-bottom: 10px; 
+}
+
+.produto h3 {
+    color: #333; 
+    margin: 10px 0;
+}
+
+.produto p {
+    color: #666;
+    line-height: 1.5; 
+}
+
+.produto button {
+    width: 220px;
+    background-color: #D7AD68; 
+    color: #f7f4ed;
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; 
+    margin-top: 10px; /* Espaçamento acima do botão */
+    border-radius: 5px;
+}
+
+.produto button:hover {
+    background-color: #c69649; /* Cor de fundo do botão ao passar o mouse */
+}
+footer{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+header form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #a79377;
+}
+.busca button{
+    background-color: #a79377;
+    color: #f7f4ed;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
